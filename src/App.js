@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import useAxios from './hooks/axios-hook';
 
 function App() {
+  const {result}=useAxios('https://jsonplaceholder.typicode.com/users',"get")
+  console.log(result)
   return (
     <div className="App">
       <header className="App-header">
