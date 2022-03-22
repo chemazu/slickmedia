@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 export default function useAxios(url, method, body = null, headers = null) {
   const [result, setResult] = useState(null);
-  const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState(true);
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState(false);
   const fetchData = async () => {
     try {
       const res = await axios[method](
@@ -12,7 +12,7 @@ export default function useAxios(url, method, body = null, headers = null) {
         JSON.parse(body)
       );
       setResult(res);
-      setIsPending(false);
+      setIsPending(true);
     } catch (error) {
       setError(error);
     }
