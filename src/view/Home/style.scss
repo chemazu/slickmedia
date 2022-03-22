@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+.nav {
+  padding: 10px 5%;
+  background: #292929;
+  align-items: center;
+  display: flex;
+
+  p {
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    width: fit-content;
+  }
+}
+.header {
+  background: url("../../resource/header.svg");
+  background-position: center;
+  background-size: cover;
+  padding: 75px 5%;
+  h1 {
+    width: 400px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: -0.05em;
+  }
+}
+.search {
+  padding: 20px 5%;
+  p {
+    padding: 10px 0;
+  }
+  .form-item {
+    display: flex;
+    width: 100%;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+
+    input {
+      width: 80%;
+      padding: 10px 5px;
+      border: 0px;
+      &:focus {
+        outline: none !important;
+      }
+    }
+    button {
+      width: 20%;
+      border: 0px;
+    }
+  }
+}
+// .search {
+//   background: #ffffff;
+//   display: grid;
+//   grid-template-columns: 1fr;
+
+//   border-radius: 5px;
+//   display: grid;
+//   align-items: center;
+//   grid-template-columns: 7fr 3fr;
+//   padding: 10px;
+//   input {
+//     border: 2px;
+//     &:focus {
+//       outline: none !important;
+//     }
+//   }
+// }
